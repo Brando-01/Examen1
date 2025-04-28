@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción</title>
+    <link rel="stylesheet" href="/Pregunta3/index.css">
+</head>
+<body>
+
+    <form id="formulario">
+        <h1>Formulario de Inscripción</h1>
+        
+        <div class="form-row">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre">
+            </div>
+
+            <div class="form-group">
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" name="edad">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="carrera">Carrera</label>
+            <select id="carrera" name="carrera">
+                <option value="Ing. Sistemas">Ing. Sistemas</option>
+                <option value="Ing. Industrial">Ing. Industrial</option>
+                <option value="Ing. Civil">Ing. Civil</option>
+                <option value="Ing. Mecatrónica">Ing. Mecatrónica</option>
+                <option value="Ing. Ambiental">Ing. Ambiental</option>
+            </select>
+        </div>
+
+        <div class="form-group checkbox-group">
+            <label>
+                <input type="checkbox" id="activo" name="activo">
+                Activo
+            </label>
+        </div>
+
+        <button type="submit">Guardar</button>
+
+        <p id="mensaje" class="mensaje"></p>
+    </form>
+
+    <script src="/Pregunta3/index.js"></script>
+</body>
+</html>
