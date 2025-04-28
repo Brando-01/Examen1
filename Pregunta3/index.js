@@ -1,5 +1,5 @@
 document.getElementById('formulario').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evita recargar la página
+    event.preventDefault(); 
 
     const nombre = document.getElementById('nombre').value.trim();
     const edad = document.getElementById('edad').value.trim();
